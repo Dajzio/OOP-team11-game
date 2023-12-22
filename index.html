@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TypeScript Cleaning</title>
+        <style>
+            html, body {
+                margin: 0;
+            }
+            body {
+                background-image: url('./assets/MAP.png');
+                background-size: cover;
+                background-position: top;
+                cursor: none;
+                position: relative;
+            }
+            canvas {
+                display: block;
+                margin: auto;
+            }
+            #miniGames {
+                text-align: center;
+                width: 100%;
+            }
+            a {
+                display: inline-block;
+                padding-left: 235px;
+                padding-right: 235px;
+            }
+            a:link, a:visited {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                color: darkgray;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = 'miniGames'>
+            <a href="./src/ticTacToe/index.html">TicTacToe</a>
+            <a href="./src/snake/index.html">Snake</a>
+            <a href="./src/racingGame/index.html">RacingGame</a>
+        </div>
+        <canvas id="game"></canvas>
+        <script src="build/app.js" type="module"></script>
+    </body>
+</html>
